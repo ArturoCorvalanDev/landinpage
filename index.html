@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Arturo Corvalán - Desarrollador Web</title>
+        <!-- Font Awesome SDK (versión gratuita) -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            integrity="sha512-..." crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <!-- AOS Animations -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+            rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/style.css">
+ 
+  </style>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Arturo Corvalán</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#inicio"
+                                class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="#about"
+                                class="nav-link">Sobre mí</a></li>
+                        <li class="nav-item"><a href="#servicios"
+                                class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="#portafolio"
+                                class="nav-link">Portafolio</a></li>
+                        <li class="nav-item"><a href="#contacto"
+                                class="nav-link">Contacto</a></li>
+
+                        <li class="nav-item"><a href="docs/CV-ARTURO-CORVALAN.docx" download
+                                class="nav-link">Descargar CV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero" id="inicio">
+                <div class="container">
+                    <h1 data-aos="fade-up">Hola, soy Arturo Corvalán</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                        Desarrollador Web & Mobile con experiencia en Laravel,
+                        Angular y Flutter.
+                    </p>
+                    <a href="#contacto" class="btn btn-light btn-lg mt-3"
+                        data-aos="zoom-in">Trabajemos juntos</a>
+                </div>
+            </section>
+            <!-- Agrega esta nueva sección justo después de la sección Hero -->
+
+            <section class="section bg-light" id="about">
+                <div class="container">
+                    <h2 class="text-center" data-aos="fade-up">Sobre mí</h2>
+                    <div class="row align-items-center">
+                        <!-- Imagen -->
+                        <div class="col-md-4 text-center mb-4 mb-md-0"
+                            data-aos="fade-right">
+                            <img src="img/arturo-corvalan.jpeg"
+                                alt="Foto de Arturo"
+                                class="rounded-circle img-fluid shadow"
+                                style="max-width: 250px;">
+                        </div>
+                        <!-- Texto -->
+                        <div class="col-md-8" data-aos="fade-left">
+        <p class="fs-5">
+          Hola, soy <strong>Arturo Corvalán</strong>, desarrollador web y mobile con más de 2 años de experiencia creando soluciones digitales a medida. Me especializo en <strong>Laravel, Angular y Flutter</strong>, tecnologías con las que he desarrollado plataformas de gestión, reservas y sistemas de punto de venta.
+        </p>
+        <p class="fs-5">
+          Disfruto trabajar en equipo, aprender nuevas tecnologías y transformar ideas en productos funcionales. Estoy abierto a proyectos freelance, colaboraciones y desarrollo de software personalizado.
+        </p>
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <!--<a href="#contacto" class="btn btn-primary">
+            <i class="fas fa-envelope me-2"></i>Contáctame
+          </a>-->
+          <a href="mailto:artur.corvalan.21@gmail.com" class="btn btn-outline-primary" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-paper-plane me-2"></i>Correo
+          </a>
+          <a href="https://wa.me/56952429390" target="_blank" class="btn btn-success" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+          </a>
+          <a href="https://linkedin.com/in/arturo-corvalan" target="_blank" class="btn btn-outline-primary" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-linkedin me-2"></i>LinkedIn
+          </a>
+          <a href="https://github.com/tuusuario" target="_blank" class="btn btn-dark" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fab fa-github me-2"></i>GitHub
+          </a>
+        </div>
+      </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Servicios -->
+            <section class="section text-center" id="servicios">
+                <div class="container">
+                    <h2 class="mb-5" data-aos="fade-up">Servicios</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="zoom-in"
+                            data-aos-delay="100">
+                            <div class="icon-box mb-3"><i
+                                    class="bi bi-code-slash"></i></div>
+                            <h4>Desarrollo Web</h4>
+                            <p>Creación de sitios y sistemas personalizados.</p>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in"
+                            data-aos-delay="300">
+                            <div class="icon-box mb-3"><i
+                                    class="bi bi-phone"></i></div>
+                            <h4>Aplicaciones Mobile</h4>
+                            <p>Desarrollo de apps móviles multiplataforma con
+                                Flutter y conexión a APIs.</p>
+                        </div>
+                        <!--<div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="icon-box mb-3"><i class="bi bi-bar-chart"></i></div>
+          <h4>Sistemas a Medida</h4>
+          <p>Plataformas de gestión, reservas, ventas, inventario y más para empresas.</p>
+        </div>-->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portafolio -->
+            <section class="section " id="portafolio">
+                <div class="container text-center">
+                    <h2 class="mb-5" data-aos="fade-up">Portafolio</h2>
+                    <div class="row g-4">
+
+                        <!-- Proyecto 1: Gestión Clínica -->
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card h-100 shadow-sm">
+                                <div id="carouselClinica" class="carousel slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img
+                                                src="img//sistema-reserva.png"
+                                                class="d-block w-100"
+                                                alt="sistema-reserva">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/creacion-reserva.png"
+                                                class="d-block w-100"
+                                                alt="creacion-reserva">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/gestion-atencion.png"
+                                                class="d-block w-100"
+                                                alt="gestion-atencion">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev"
+                                        type="button"
+                                        data-bs-target="#carouselClinica"
+                                        data-bs-slide="prev">
+                                        <span class="fa fa-arrow-left"
+                                            style="color: black;"
+                                            aria-hidden="true"></span>
+                                        <span
+                                            class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next"
+                                        type="button"
+                                        data-bs-target="#carouselClinica"
+                                        data-bs-slide="next">
+                                        <span class="fa fa-arrow-right"
+                                            style="color: black;"
+                                            aria-hidden="true"></span>
+                                        <span
+                                            class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sistema de Gestión
+                                        Clínica</h5>
+                                    <p class="card-text">Reserva de horas,
+                                        fichas de
+                                        pacientes y administración para centros
+                                        médicos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Proyecto 2: Punto de Venta -->
+                        <div class="col-md-6" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="card h-100 shadow-sm">
+                                <div id="carouselPOS" class="carousel slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img
+                                                src="img/dashboard.png"
+                                                class="d-block w-100"
+                                                alt="dashboard">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/lista-sku.png"
+                                                class="d-block w-100"
+                                                alt="lista-sku">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/formulario-ingreso-rapido.png"
+                                                class="d-block w-100"
+                                                alt="ingresoRapido">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/gestion-de-categoria.png"
+                                                class="d-block w-100"
+                                                alt="gestion-de-categoria">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/gestion-de-cliente.png"
+                                                class="d-block w-100"
+                                                alt="gestion-de-cliente">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/gestion-de-proveedores.png"
+                                                class="d-block w-100"
+                                                alt="gestion-de-proveedores">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="img/informes.png"
+                                                class="d-block w-100"
+                                                alt="informes">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev "
+                                        type="button"
+                                        data-bs-target="#carouselPOS"
+                                        data-bs-slide="prev">
+                                        <span class="fa fa-arrow-left"
+                                            style="color: black;"
+                                            aria-hidden="true"></span>
+                                        <span
+                                            class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next"
+                                        style="color: black;"
+                                        type="button"
+                                        data-bs-target="#carouselPOS"
+                                        data-bs-slide="next">
+                                        <span class="fa fa-arrow-right"
+                                            aria-hidden="true"></span>
+                                        <span
+                                            class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Punto de Venta</h5>
+                                    <p class="card-text">Sistema web de ventas,
+                                        inventario y boletas electrónicas para
+                                        negocios.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-white text-center" id="tecnologias">
+                <div class="container">
+                    <h2 class="mb-5" data-aos="fade-up">Tecnologías que uso</h2>
+                    <div
+                        class="d-flex flex-wrap justify-content-center gap-4 fs-1 text-primary"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-laravel" title="Laravel"></i>
+                        <i class="fab fa-angular" title="Angular"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-php" title="PHP"></i>
+                        <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-git-alt" title="Git"></i>
+                        <i class="fab fa-github" title="GitHub"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                        <i class="fas fa-database"
+                            title="MySQL / PostgreSQL"></i>
+                        <i class="fas fa-mobile-alt"
+                            title="Flutter (Mobile)"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section class="section text-center" id="contacto">
+                <div class="container">
+                    <h2 data-aos="fade-right">Contáctame</h2>
+                    <p class="mb-4" data-aos="fade-left">Estoy disponible para
+                        nuevos proyectos freelance o colaboraciones.</p>
+                    <div class="d-flex justify-content-center gap-4 flex-wrap">
+                        <a href="mailto:artur.corvalan.21@gmail.com" class="btn btn-outline-primary" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-paper-plane me-2"></i>Correo
+          </a>
+          <a href="https://wa.me/56952429390" target="_blank" class="btn btn-success" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+          </a>
+          <a href="https://linkedin.com/in/arturo-corvalan" target="_blank" class="btn btn-outline-primary" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fab fa-linkedin me-2"></i>LinkedIn
+          </a>
+          <a href="https://github.com/tuusuario" target="_blank" class="btn btn-dark" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fab fa-github me-2"></i>GitHub
+          </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2025 Arturo Corvalán. Todos los derechos
+                        reservados.</p>
+                </div>
+            </footer>
+
+            <!-- Bootstrap JS -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- AOS -->
+            <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+            <script>AOS.init();</script>
+            <!-- Bootstrap Icons -->
+            <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        </body>
+    </html>
