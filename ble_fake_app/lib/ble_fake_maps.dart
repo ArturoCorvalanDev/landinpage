@@ -161,11 +161,35 @@ class _BleFakeMapsState extends State<BleFakeMaps> {
   }
 
   void _disappearOneDevice() {
-    if (fakeDevices == null || fakeDevices!.isEmpty) return;
+    if (fakeDevices == null || fakeDevices!.length < 2) return;
 
-    final int indexToRemove = rng.nextInt(fakeDevices!.length);
+    // Selecciona candidatos que tengan al menos un vecino entre 1 y 5 metros
+    final List<int> candidates = [];
+    for (int i = 0; i < fakeDevices!.length; i++) {
+      final FakeDevice a = fakeDevices![i];
+      bool hasCloseNeighbor = false;
+      for (int j = 0; j < fakeDevices!.length; j++) {
+        if (i == j) continue;
+        final FakeDevice b = fakeDevices![j];
+        final double dMeters = distance(LatLng(a.lat, a.lng), LatLng(b.lat, b.lng));
+        if (dMeters >= 1.0 && dMeters <= 5.0) {
+          hasCloseNeighbor = true;
+          break;
+        }
+      }
+      if (hasCloseNeighbor) {
+        candidates.add(i);
+      }
+    }
+
+    // Si no hay candidatos cercanos (1–5 m), no desaparece ningún dispositivo este minuto
+    if (candidates.isEmpty) return;
+
+    // Elige un candidato al azar entre los que cumplen la proximidad
+    final int indexToRemove = candidates[rng.nextInt(candidates.length)];
     final FakeDevice disappearingDevice = fakeDevices![indexToRemove];
 
+    // Ordena testigos por cercanía al que desaparece
     final List<FakeDevice> witnesses = fakeDevices!
         .where((d) => d.id != disappearingDevice.id)
         .toList()
@@ -178,8 +202,10 @@ class _BleFakeMapsState extends State<BleFakeMaps> {
     final List<FakeDevice> top10Witnesses = witnesses.take(10).toList();
     final String? nearestWitnessId = top10Witnesses.isNotEmpty ? top10Witnesses.first.id : null;
 
+    // Notifica desaparición con top-10 testigos
     _notifyDeviceDisappeared(disappearingDevice, top10Witnesses);
 
+    // Elimina del mapa y programa reaparición a 60s / 30m
     setState(() {
       fakeDevices!.removeAt(indexToRemove);
     });
